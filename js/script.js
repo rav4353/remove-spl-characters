@@ -1,7 +1,19 @@
+// Remove spl char
 
-// slice
+let a = "barathbeiem@gmail.com"
+let b = " ";
+for(i=0; i<a.length;i++){
+    if(a[i] == "@"){
+        continue;
+    }
+    b+= a[i];
+
+}
+console.log(b)
 
 
-let str = "Helloo@ravanth";
-str = str.slice(0, 5) +str.slice(6, str.length);
-console.log(str);
+//
+
+let d1 = "bha/ssetu/rath075@gmail.com"
+console.log(d1.split("."));
+console.log(d1[2]);
